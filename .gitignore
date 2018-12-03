@@ -1,0 +1,4 @@
+ds
+venv
+*.py[cod]
+.DS_Store
