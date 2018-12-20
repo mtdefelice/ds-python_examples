@@ -33,7 +33,7 @@ from matplotlib.ticker import FuncFormatter
 
 # Function to generate plots
 def gen_na_plots (df, _nam = 'Rebecca', _sex = 'F'):
-    dm = pd.read_csv ('~/ds/DeathProbsE_{}_Alt2_TR2014.csv'.format (_sex), skiprows = 1)
+    dm = pd.read_csv ('./ds/DeathProbsE_{}_Alt2_TR2014.csv'.format (_sex), skiprows = 1)
     a = dm.set_index ('Year').loc[pd.to_datetime ('now').year].rename ('pd')
     a.index = a.index.astype ('int64')
     a.index.name = 'age'
