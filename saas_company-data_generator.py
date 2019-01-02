@@ -95,8 +95,11 @@ invoiced_items = pd.concat ([
 invoiced_items.insert (0, 'Invoice_Id', range (5000000, 5000000 + invoiced_items.shape[0]))
 invoiced_items = invoiced_items.reset_index ()
 
-# Do stuff now with invoiced_items
-# ...
+# Do stuff now with invoiced_items e.g.
+# 1. Aggregate the invoiced_items DataFrame by month. For each month, show the total MRR by new customers, upgrades, downgrades, and defections. Similarly, then show the number of customers per month in each of these categories.
+# 2. Find the top 5 largest customer defection events.
+# 3. Given the model's parameters on growth, what is the maximum size of this SaaS business? When will the business reach this maximum?
+# 4. How does the growth of the cohort of customers with odd Customer_Ids who signed-up within the first 6 periods compare to the similar cohort of evenly-numbered Customer_Ids? Present your results both as an A/B test and a plot.
 
 # Example Plot
 fig, ax = plt.subplots (1, 1, figsize = (11, 8.5))
